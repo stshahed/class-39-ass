@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* menu */
+.menu {
+    background: #22c3a3;
+    height: 82px;
+}
+.logo{
+    float: left;
+    width: 30%;
+}
+.logo h2 {
+    color: #fff;
+    font-size: 33px;
+    line-height: 82px;
+    padding-left: 45px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+.menubar {
+    float: right;
+    width: 70%;
+}
+.menubar ul {
+    text-align: right;
+    list-style: none;
+    margin-right: 44px;
+}
+.menubar ul li {
+    display: inline-block;
+    margin-left: 23px;
+}
+.menubar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 82px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.menubar ul li a:hover{
+    color: black;
+}
+/* banner */
+.banner{
+    background-image: url("https://wallpapercave.com/wp/wp3084933.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    padding: 200px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+.banner::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(14, 13, 13, 0.664);
+    z-index: -1;
+}
+.banner h1 {
+    color: #fff;
+    font-size: 55px;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 23px;
+    padding-bottom: 30px;
+}
+.banner h4 {
+    color: #22c3a3;
+    font-size: 24px;
+    padding-bottom: 49px;
+}
+.clickMe{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 25px;
+    border: 1px solid #22c3a3;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+    word-spacing: 5px;
+    position: relative;
+    
+    z-index: 1;
+}
+.clickMe::before{
+    content: "";
+    height: 100%;
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #48ebca;
+    z-index: -1;
+    transition: .5s;
+}
+.clickMe:hover::before{
+    width: 100%;
+}
+/* service */
+.service_section{
+    border-bottom: 2px solid #0dbf9b;
+}
+.part1{
+    text-align: center;
+}
+.part1 h2 {
+    padding: 60px 0 25px 0;
+    font-size: 37px;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 10px;
+}
+.part1 p {
+    font-family: 'Roboto', sans-serif;
+    color: #919999;
+}
+.part2 {
+    margin: 86px 0 112px 71px;
+}
+.services {
+    text-align: center;
+    float: left;
+    width: 21%;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 42px;
+}
+.icon1 {
+    font-size: 40px;
+    color: #0dbf9b;
+    padding-bottom: 25px;
+}
+
+.services h3 {
+    word-spacing: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+.services p {
+    font-size: 15px;
+    padding-top: 15px;
+}
+/* about */
+.about_section{}
+.about_part1{
+    text-align: center;
+}
+.about_part1 h2 {
+    padding: 60px 0 25px 0;
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 10px;
+}
+.about_part1 p {
+    font-family: 'Roboto', sans-serif;
+    color: #919999;
+}
+.about_part2 {
+    margin: 70px 55px;
+}
+.img_section{
+    float: left;
+    width: 40%;
+}
+img{
+    max-width: 100%;
+}
+.details {
+    float: right;
+    width: 55%;
+    margin: 10px 0 0 30px;
+}
+.details h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #66666e;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+.details p {
+    font-family: 'Roboto', sans-serif;
+    color: #919999;
+    padding-bottom: 10px;
+}
+/* contact */
+.contact{
+    background: #f6f6f6;
+    padding: 70px 0;
+}
+.contact_part1{
+    text-align: center;
+}
+.contact_part1 h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 41px;
+}
+.contact_part1 p {
+    font-family: 'Roboto', sans-serif;
+    padding: 36px 0 50px 0;
+    color: #919999;
+}
+.contact_part2{
+    margin-left: 204px;
+}
+.contact_info{
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 139px;
+    color: #919999;
+}
+.icon2 {
+    color: #0dbf9b;
+    padding-bottom: 15px;
+    font-size: 22px;
+}
+/* footer */
+.footer{
+    background: #0dbf9b;
+}
+.footer ul{
+    text-align: center;
+    margin-bottom: 0;
+}
+.footer ul li{
+    display: inline-block;
+}
+.footer ul li a {
+    color: #fff;
+    padding: 21px 11px;
+    display: inline-block;
+    font-size: 20px;
+}
+.copy {
+    text-align: center;
+    color: #919999;
+    background: black;
+    padding: 15px 0;
+}
